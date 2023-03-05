@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<link href="lab1.css" rel="stylesheet" type="text/css">
+    <title> Very Important Questionnaire</title>
+  </head>
+  
+  <body>
+	<h1>Intresting and Complex Survey</h1>
+	<form id="myform" action="index.php" >
+	<br>
+	<br>
+	<h3><i>This is a Test of our first 
+    HTML UI design!</i></h3>
+	<h2>Click here to learn more about <a href="https://www.worldwildlife.org/species/sea-turtle">Turtles!</a> </h2>	
+	<br>
+	<br>
+	<a href="https://www.worldwildlife.org/species/sea-turtle"><img src="turtles.jpg" alt = "Turtle Website" width="450" height="300"></a>
+	<br>
+	<br>
+	<div class="question">
+	<h2> If you had a turtle, what would be it's name? </h2>
+	<p>First name: <input type="text" name="firstname"></p>
+	<p>Last name: <input type="text" name="lastname"></p>
+		
+	</div>	
+		
+	<div class="question">
+		<h2> What do you think about the page on Sea Turtles? </h2>
+		Options:<br>
+		<input type="checkbox" name="Satisfaction" value="Good">Good<br>
+		<input type="checkbox" name="Satisfaction" value="Mediocre">Mediocre<br>
+		<input type="checkbox" name="Satisfaction" value="Bad">Bad<br>
+        	<input type="checkbox" name="Satisfaction" value="Neutral">Neutral<br>
+		
+		<br>
+		
+		What your favorite species of turtles?<br>
+		<select id="favorite">
+			<option value="Green" selected="selected">Green</option>
+			<option value="Hawksbill">Hawksbill</option>
+			<option value="Loggerhead">Loggerhead</option>
+            		<option value="Leatherback">Leatherback</option>
+			<option value="Olive ridley">Olive Ridley</option>
+		</select>
+		
+		<h2> Do you like the feel of this website? </h2>
+			<input type="radio" id="yes" name="like_feel" value="Yes">
+			<label for="Yes">Yes</label><br>
+			<input type="radio" id="no" name="like_feel" value="No">
+			<label for="no">No</label><br>
+		
+		<h2> Has this website conviced you to buy a turtle? </h2>
+			<input type="radio" id="yes" name="buy_turtle" value="Yes">
+			<label for="Yes">Yes</label><br>
+			<input type="radio" id="no" name="buy_turtle" value="No">
+			<label for="no">No</label><br>
+			<input type="radio" id="maybe" name="buy_turtle" value="Maybe">
+			<label for="maybe">Maybe</label><br>
+		
+		<h2> Do you like the font of the text on this website? </h2>
+			<input type="radio" id="yes" name="like_font" value="Yes">
+			<label for="Yes">Yes</label><br>
+			<input type="radio" id="no" name="like_font" value="No">
+			<label for="no">No</label><br>
+			
+		
+	</div>
+	
+	<br>
+	<br>
+		
+	How do you think we can save the turtles?:<br>
+	<textarea rows="5" cols="30"></textarea>
+			
+	<br>
+	<br>
+			
+	<button id="submitButton" type="button" class="block">
+		SUBMIT your form for review
+	</button>
+		
+	<p id="signature">Thank you for you contribution, it will inevitably help save more turtles! 
+   <br> This Site created by Geshanth Krishnapillai, Gavin Gao, and Marcus Dillon</p>	
+	
+	</form>
+  </body>
+</html>
