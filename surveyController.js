@@ -45,7 +45,7 @@ module.exports = function(app){
         var color = readData("color");
         var fruit = readData("fruit");
         var animal = readData("animal");
-        res.render('showResults', {results: [color, fruit, animal]});
+        res.render('./showResults', {results: [color, fruit, animal]});
         console.log([color, fruit, animal]);
     });
 
