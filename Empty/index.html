@@ -1,84 +1,98 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-	<link href="lab1.css" rel="stylesheet" type="text/css">
-    <title> Very Important Questionnaire</title>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
   </head>
+  <div class="container-md p-3 my-3 border bg-dark text-white" id="survey">
+    <h1>Survey</h1>
   
   <body>
-	<h1>Intresting and Complex Survey</h1>
-	<form id="myform" action="index.php" >
-	<br>
-	<br>
-	<h3><i>This is a 2d version of our survey based on first lab
-    HTML UI design!</i></h3>	
-	<br>
-	<br>
-	<a href="https://www.worldwildlife.org/species/sea-turtle"><img src="turtles.jpg" alt = "Turtle Website" width="450" height="300"></a>
-	<br>
-	<br>
-	<div class="question">
-	<h2> Before we begin, we would like to know about you</h2>
-	<p>First name: <input type="text" name="firstname"></p>
-	<p>Last name: <input type="text" name="lastname"></p>
+	
+	<h2> What is your favorite fruit? </h2>
+      I like:<br>
+      <input type="text" name="fruit" placeholder="Type a fruit name" required />
+      <br>
+      <br>
+      <h2> What is your favourite color? </h2>
+	    I like:<br>
+		<label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
 		
-	</div>	
-		
-	<div class="question">
-		<h2> What are your favourite animals?<br>
-		<input type="checkbox" name="Satisfaction" value="Tiger">Tiger<br>
-		<input type="checkbox" name="Satisfaction" value="Penguin">Penguin<br>
-		<input type="checkbox" name="Satisfaction" value="Rabbit">Rabbit<br>
-        <input type="checkbox" name="Satisfaction" value="Wolf">Wolf<br>
-		<input type="checkbox" name="Satisfaction" value="Deer">Deer<br>
-		
-		<br>
-		
-		What is your favorite color?<br>
-		<select id="favorite">
-			<option value="Green" selected="selected">Green</option>
-			<option value="Blue">Blue</option>
-			<option value="Black">Black</option>
-            <option value="Red">Red</option>
-			<option value="Yellow">Yellow</option>
-		</select>
-		
-		<h2> What is your favorite fruit? </h2>
-			<input type="radio" id="fruit_apple" name="fruit_apple" value="Apple">
-			<label for="Apple">Apple</label><br>
-			<input type="radio" id="fruit_banana" name="fruit_banana" value="Banana">
-			<label for="Banana">Banana</label><br>
-			<input type="radio" id="fruit_peach" name="fruit_peach" value="Peach">
-			<label for="Peach">Peach</label><br>
-			<input type="radio" id="fruit_blueberries" name="fruit_blueberries" value="Blueberries">
-			<label for="Blueberries">Blueberries</label><br>
-		
-		<h2> What is your favourite meat? </h2>
-			<input type="button" id="meat_bacon" name="meat_bacon" value="Bacon">
-			<input type="button" id="meat_grounded_beef" name="meat_grounded_beef" value="Grounded_beef">
-			<input type="button" id="meat_chicken" name="meat_chicken" value="Chicken">
-			
-			
-		
-		<h2> What is your birthday? </h2>
-			<input type="date" id="birthday" name="birthday" value="Birthday">
-			<label for="Birthday">Birthday</label><br>
-			
-		<h2> Describe to us your favorite exercise or hobby, how often you do it and how long each time </h2>
-			<textarea rows="5" cols="30"></textarea>
-
-		
+      <br>
+      <h2>What are your favorite animal(s)?</h2>
+      I like:<br>
+      <input type="checkbox" name="animal" value="Dog"> Dog<br>
+	  <input type="checkbox" name="animal" value="Cat"> Cat<br>
+      <input type="checkbox" name="animal" value="Rabbit"> Rabbit<br>
+      <br>
+      <br>
+	  
+	  <h2> What is your favourite meat? </h2>
+			<select name="meat">
+			  <option value="Bacon" selected="selected">Bacon</option>
+			  <option value="Beef">Beef</option>
+			  <option value="Chicken">Chicken</option>
+			  <option value="Fish">Fish</option>
+      </select>
+            <br>
+            <br>
+	  
+	  <h2>What is your favorite season?</h2>
+      I like:<br>
+      <select name="season">
+			  <option value="Spring" selected="selected">Spring</option>
+			  <option value="Summer">Summer</option>
+			  <option value="Fall">Fall</option>
+			  <option value="Winter">Winter</option>
+      </select>
+      <br>
+      <br>
+	  
+	  <h2> What is your favorite country? </h2>
+			<input type="radio" id="rad canada" name="canada" value="Canada">
+			<label for="canada">Canada</label><br>
+			<input type="radio" id="rad brazil" name="brazil" value="Brazil">
+			<label for="brazil">Brazil</label><br>
+			<input type="radio" id="rad uk" name="uk" value="U.K.">
+			<label for="uk">U.K.</label><br>
+			<input type="radio" id="rad france" name="france" value="France">
+			<label for="france">France</label><br>
+			<input type="radio" id="rad korea" name="korea" value="Korea">
+			<label for="korea">Korea</label><br>
+            <br>
+	  
+	  <h2>Do you like traveling?</h2>
+	  <input type="radio" id="rad yes-travel" name="yes-travel" value="Yes-travel">
+	  <label for="yes-travel">Yes</label><br>
+	  <input type="radio" id="rad no-travel" name="no-travel" value="No-travel">
+	  <label for="no-travel">No</label><br>
+      <br>
+	  
+	  <h2>Do you like trying various culinary dishe?</h2>
+	  <input type="radio" id="rad yes-dishes" name="yes-dishes" value="Yes-dishes">
+	  <label for="yes-dishes">Yes</label><br>
+	  <input type="radio" id="rad no-dishes" name="no-dishes" value="No-dishes">
+	  <label for="no-dishes">No</label><br>
+      <br>
+	  
+	  <h2>How old are you?</h2>
+	  <input type = "number" id = "number-age" name = "number-age" placeholder="Type a integer" value = "number-age" >
+	  <br>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+      <p id="thanks"></p>
+    </form>
 	</div>
-	
-			
-	<button id="submitButton" type="button" class="block">
-		SUBMIT your form for review
-	</button>
-		
-	<p id="signature">Thank you for you contribution, it will inevitably help save more turtles! 
-   <br> This Site created by Geshanth Krishnapillai, Gavin Gao, Esteban Pedroza-Bolduc, EstebanMarcus Dillon</p>	
-	
-	</form>
+    
+	<script src="/assets/action.js"></script>
   </body>
-</html>
+</html> 
